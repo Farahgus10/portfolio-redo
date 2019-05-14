@@ -13,19 +13,19 @@ function generateMainPageHTML(){
         <nav role="navigation" class="contact">
             <button class="js-contact-button" type="button">Contact me</button>
           </nav>
-
-
-        <div class="line">hello
-        
         
         <section class="header">
             <header role="banner">
+              <div class="name">
                 <h1>Farah Gustafson</h1>
+              </div>
+              <div class="occupation">
                 <h2>Full stack developer</h2>
+              </div>
+
+              <div class="contact
             </header>
         </section>
-
-        
 
         <section class="About-me">
             <div class="about">
