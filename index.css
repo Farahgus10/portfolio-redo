@@ -1,37 +1,189 @@
+ * { box-sizing: border-box; }
+
 html, body{
-    width: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
 }
 
-#main-page{
+body{
     display: flex;
     flex-direction: column;
 }
 
-header{
+section{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
     border: 1px solid red;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     font-family: 'Roboto Mono', monospace;
 }
 
 .name{
-    margin-top: 110px ;
-    margin-left: 100px;
-    font-size: 30px;
+    font-size: 3vw;
+    margin-top: 10%;
+    margin-left: 5%;
 }
 
 .occupation{
-    margin-left: 30%;
-    font-size: 25px;
+    margin-left: 11%;
+    margin-top: 70px;
+    font-size: 15px;
+    width: fit-content;
 }
 
+
+.about-me{
+    border: 1px solid orange;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.contact{
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 120px;
+    margin-left: 5%;
+    width: fit-content;
+}
+@media only screen and (min-width: 400px) {
+    .contact {
+      margin-top: 20%;
+    }
+  }
+@media only screen and (min-width: 600px) {
+    .contact {
+        margin-top: 15%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .contact {
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .contact {
+        width: 450px;
+        height: 270px;
+        position: relative;
+        margin-left: 50%;
+        margin-top: 8%;
+    }
+    .name{
+        /* font-size: 2.5vw; */
+        margin-top: 80px;
+    }
+    .occupation{
+        font-size: 28px;
+        margin-left:250px;
+        margin-top: 70px;
+    }
+    .phone, .email, .find-me, .location{
+       position: absolute;
+    }
+    .phone{
+        top: 0; left: 0;
+    }
+    .email{
+        top: 0; right: 0;
+    }
+    .find-me{
+        bottom: 22px; left: 0;
+    }
+    .location{
+        bottom: 0; right: 85px;
+    }
+    .contact-title{ font-size: 15px; }
+    .contact-info {font-size: 17px; }
+}
+
+@media only screen and (min-width: 1200px) {
+.contact {
+    width: 600px;
+    height: 290px;
+    position: relative;
+    margin-left: 45%;
+
+    margin-top: 5%;
+}
+.name{
+    /* font-size: 30px; */
+    margin-top: 80px;
+}
+.occupation{
+    font-size: 25px;
+    margin-left:400px;
+    margin-top: 30px;
+}
+.contact-title{ font-size: 20px; }
+.contact-info {font-size: 24px; }
+}
+
+@media only screen and (min-width: 1600px) {
+    .contact{
+    margin-top: 2%;
+       margin-left: 60%;
+    }
+}
+
+.contact-title{
+    color: grey;
+    /* font-size: 12px; */
+}
+
+
+/*====================
+    ABOUT SECTION
+=====================*/
+.projects-section{
+    border: 1px solid green;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.about-box{
+    margin: 50px 30%;
+    font-size: 3vw;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.about-box h3{
+    font-size: 13px;
+}
+
+.bio-box{
+    margin-left: 80px;
+    padding-right: 100px;
+}
+.bio-text, .skills-text{
+    font-size: 12px;
+}
+
+.skills-box{
+    margin-top: 50px;
+    margin-right: 100px;
+    text-align: right;
+}
+@media only screen and (min-width: 600px)  {
+    .skills-box {
+        margin-top: 100px;
+    }
+    .bio-text, .skills-text { font-size: 15px; }
+}
+
+/*
 .about{
     display: flex;
     justify-content: space-between;
     border: 1px solid green;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -41,9 +193,7 @@ header{
     height: 300px;
 }
 
-.about-box{
-    margin: 50px 50px;
-}
+
 
 .skills-box, .bio-box{
     margin-top: 100px;
@@ -56,7 +206,7 @@ header{
 .projects{
     position: relative;
     border: 1px solid orange;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -92,4 +242,4 @@ header{
     height: 250px;
  margin-top: 80px;
     width: 450px;
-}
+} */
