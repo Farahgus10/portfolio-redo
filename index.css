@@ -25,14 +25,14 @@ section{
 }
 
 .name{
-    font-size: 3vw;
+    font-size: 15px;
     margin-top: 10%;
     margin-left: 5%;
 }
 
 .occupation{
     margin-left: 11%;
-    margin-top: 70px;
+    margin-top: 50px;
     font-size: 15px;
     width: fit-content;
 }
@@ -47,42 +47,40 @@ section{
 
 .contact{
     font-family: 'Roboto Mono', monospace;
-    margin-top: 120px;
+    margin-top: 100px;
     margin-left: 5%;
     width: fit-content;
 }
-@media only screen and (min-width: 400px) {
-    .contact {
-      margin-top: 20%;
-    }
-  }
 @media only screen and (min-width: 600px) {
     .contact {
-        margin-top: 15%;
+        margin-top: 50px;
+    }
+    .name{
+        margin-top: 8%;
+        font-size: 18px;
     }
 }
 @media only screen and (min-width: 800px) {
     .contact {
-        margin-top: 10%;
-        margin-left: 20%;
+        margin-left: 60%;
     }
 }
 @media only screen and (min-width: 1000px) {
     .contact {
         width: 450px;
-        height: 270px;
+        height: 200px;
         position: relative;
         margin-left: 50%;
-        margin-top: 8%;
+        margin-top: 60px;
     }
     .name{
-        /* font-size: 2.5vw; */
+        font-size: 25px;
         margin-top: 80px;
     }
     .occupation{
-        font-size: 28px;
+        font-size: 23px;
         margin-left:250px;
-        margin-top: 70px;
+        margin-top: 60px;
     }
     .phone, .email, .find-me, .location{
        position: absolute;
@@ -99,30 +97,27 @@ section{
     .location{
         bottom: 0; right: 85px;
     }
-    .contact-title{ font-size: 15px; }
-    .contact-info {font-size: 17px; }
+    .contact-title{ font-size: 14px; }
+    .contact-info {font-size: 18px; }
 }
 
 @media only screen and (min-width: 1200px) {
 .contact {
-    width: 600px;
-    height: 290px;
+    width: 480px;
+    height: 230px;
     position: relative;
-    margin-left: 45%;
+    margin-left: 55%;
 
-    margin-top: 5%;
+    margin-top: 120px;
 }
 .name{
-    /* font-size: 30px; */
     margin-top: 80px;
 }
 .occupation{
     font-size: 25px;
     margin-left:400px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
-.contact-title{ font-size: 20px; }
-.contact-info {font-size: 24px; }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -134,7 +129,6 @@ section{
 
 .contact-title{
     color: grey;
-    /* font-size: 12px; */
 }
 
 
@@ -149,34 +143,70 @@ section{
 }
 
 .about-box{
-    margin: 50px 30%;
+    margin-left: 50px;
+    margin-top: 40px;
     font-size: 3vw;
     font-family: 'Roboto Mono', monospace;
 }
 
-.about-box h3{
-    font-size: 13px;
+.about{ 
+    display: flex;
+    flex-direction: column;
+}
+
+.about h3{
+    font-size: 17px;
+    color: grey;
 }
 
 .bio-box{
-    margin-left: 80px;
-    padding-right: 100px;
+    width: 80%;
+    padding-left: 50px;
 }
 .bio-text, .skills-text{
     font-size: 12px;
 }
 
 .skills-box{
-    margin-top: 50px;
-    margin-right: 100px;
     text-align: right;
+    margin-right: 50px;
+    margin-top: 20px;
 }
+
 @media only screen and (min-width: 600px)  {
-    .skills-box {
-        margin-top: 100px;
-    }
-    .bio-text, .skills-text { font-size: 15px; }
+    .bio-box{ margin-left: 60px; width: 60%;}
 }
+@media only screen and (min-width: 800px)  {
+    .bio-box{ margin-left: 70px; width: 50%;}
+    .skills-box{ margin-right: 100px; }
+    .bio-text, .skills-text{ font-size: 13px }
+}
+@media only screen and (min-width: 1000px)  {
+    .about { flex-direction: row; }
+    .about-box { margin-top: 20px}
+    .bio-box{ margin-top: 180px; margin-left: -80px; width: 40%;}
+    .skills-box{ margin-left: 130px; margin-top: 320px;}
+    .bio-text, .skills-text{ font-size: 14px }
+}
+@media only screen and (min-width: 1200px)  {
+    .skills-box { margin-left: 200px; }
+}
+
+
+/* 
+@media only screen and (min-width: 900px)  {
+    .bio-box{ width: 50%; padding-right: 0px;}
+    .bio-text, .skills-text { font-size: 17px;}
+    .about h3 { font-size: 18px; }
+    .skills-box { margin-top: 0px;}
+}
+@media only screen and (min-width: 1100px)  {
+    .about-box{ margin-left: 100px;}
+    .bio-box{ width: 30%; padding-right: 0px; margin-left: 300px;}
+    .bio-text, .skills-text { font-size: 17px;}
+    .about h3 { font-size: 18px; }
+    .skills-box { margin-top: 0px;}
+} */
 
 /*
 .about{
