@@ -62,7 +62,7 @@ function generateMainPageHTML(){
 
         <section class="projects-section">
             <div class="projects">
-                <div class="project-main">project-main</div>
+                <div class="project-main">Projects</div>
                 <div class="project-description">project-description</div>
                 <div class="project-title">project-title</div>
                 <div class="project-picture">project-picture</div>

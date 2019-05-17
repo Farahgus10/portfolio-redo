@@ -37,7 +37,6 @@ section{
     width: fit-content;
 }
 
-
 .about-me{
     border: 1px solid orange;
     height: 100vh;
@@ -52,51 +51,22 @@ section{
     width: fit-content;
 }
 @media only screen and (min-width: 600px) {
-    .contact {
-        margin-top: 50px;
-    }
-    .name{
-        margin-top: 8%;
-        font-size: 18px;
-    }
+    .contact { margin-top: 50px; }
+    .name{ margin-top: 8%; font-size: 18px; }
+}
+@media only screen and (min-width: 700px) {
+    .contact { margin-left: 60%; }
 }
 @media only screen and (min-width: 800px) {
-    .contact {
-        margin-left: 60%;
-    }
-}
-@media only screen and (min-width: 1000px) {
-    .contact {
-        width: 450px;
-        height: 200px;
-        position: relative;
-        margin-left: 50%;
-        margin-top: 60px;
-    }
-    .name{
-        font-size: 25px;
-        margin-top: 80px;
-    }
-    .occupation{
-        font-size: 23px;
-        margin-left:250px;
-        margin-top: 60px;
-    }
-    .phone, .email, .find-me, .location{
-       position: absolute;
-    }
-    .phone{
-        top: 0; left: 0;
-    }
-    .email{
-        top: 0; right: 0;
-    }
-    .find-me{
-        bottom: 22px; left: 0;
-    }
-    .location{
-        bottom: 0; right: 85px;
-    }
+    .contact { width: 450px; height: 200px; position: relative;
+        margin-left: 50%; margin-top: 60px; }
+    .name{ font-size: 25px; margin-top: 80px; }
+    .occupation{ font-size: 23px; margin-left:250px; margin-top: 60px; }
+    .phone, .email, .find-me, .location{ position: absolute; }
+    .phone{ top: 0; left: 0; }
+    .email{ top: 0; right: 0; }
+    .find-me{ bottom: 22px; left: 0; }
+    .location{ bottom: 0; right: 85px; }
     .contact-title{ font-size: 14px; }
     .contact-info {font-size: 18px; }
 }
@@ -107,41 +77,23 @@ section{
     height: 230px;
     position: relative;
     margin-left: 55%;
-
     margin-top: 120px;
 }
-.name{
-    margin-top: 80px;
-}
-.occupation{
-    font-size: 25px;
-    margin-left:400px;
-    margin-top: 50px;
-}
+.name{ margin-top: 80px; }
+.occupation{ font-size: 25px; margin-left:400px; margin-top: 50px; }
 }
 
 @media only screen and (min-width: 1600px) {
-    .contact{
-    margin-top: 2%;
-       margin-left: 60%;
-    }
+    .contact{ margin-top: 2%; margin-left: 60%; }
 }
 
 .contact-title{
     color: grey;
 }
 
-
 /*====================
     ABOUT SECTION
 =====================*/
-.projects-section{
-    border: 1px solid green;
-    height: 100vh;
-    width: 100%;
-    font-family: 'Roboto Mono', monospace;
-}
-
 .about-box{
     margin-left: 50px;
     margin-top: 40px;
@@ -170,7 +122,7 @@ section{
 .skills-box{
     text-align: right;
     margin-right: 50px;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 @media only screen and (min-width: 600px)  {
@@ -186,90 +138,56 @@ section{
     .about-box { margin-top: 20px}
     .bio-box{ margin-top: 180px; margin-left: -80px; width: 40%;}
     .skills-box{ margin-left: 130px; margin-top: 320px;}
-    .bio-text, .skills-text{ font-size: 14px }
+    .bio-text, .skills-text{ font-size: 16px }
 }
 @media only screen and (min-width: 1200px)  {
     .skills-box { margin-left: 200px; }
 }
 
 
-/* 
-@media only screen and (min-width: 900px)  {
-    .bio-box{ width: 50%; padding-right: 0px;}
-    .bio-text, .skills-text { font-size: 17px;}
-    .about h3 { font-size: 18px; }
-    .skills-box { margin-top: 0px;}
-}
-@media only screen and (min-width: 1100px)  {
-    .about-box{ margin-left: 100px;}
-    .bio-box{ width: 30%; padding-right: 0px; margin-left: 300px;}
-    .bio-text, .skills-text { font-size: 17px;}
-    .about h3 { font-size: 18px; }
-    .skills-box { margin-top: 0px;}
-} */
-
-/*
-.about{
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid green;
-    width: 100%;
-    height: 100vh;
-}
-
-.about-box, .skills-box, .bio-box{
-    border: 1px solid black;
-    width: 200px;
-    height: 300px;
-}
-
-
-
-.skills-box, .bio-box{
-    margin-top: 100px;
-}
-
-.bio-box{
-    margin-right: 100px;
-}
-
-.projects{
+/*======================
+    PROJECTS SECTION
+========================*/
+.projects-section{
     position: relative;
-    border: 1px solid orange;
-    width: 100%;
+    border: 1px solid green;
+    position: relative;
     height: 100vh;
+    width: 100%;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .project-description, .project-title, .project-picture, .project-main{
     position: absolute;
     border: 1px solid black;
+}
+
+.project-picture{
+    top: 80px;
+    height: 200px;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.project-title{
+    bottom: 160px;
+    left: 30%;
+}
+
+.project-description{
+    bottom: 120px;
+    left: 20%;
     width: 200px;
 }
 
 .project-main{
-    top: 50px;
-    left: 50px;
     border: 1px solid black;
-    width: 200px;
-    height: 100px;
+    right: 50px;
+    width: fit-content;
+    margin-top: 50px;
+    flex: 1;
+    font-size: 30px;
 }
 
-.project-description{
-    left: 250px;
-    top: 200px;
-    height: 100px;
-}
 
-.project-title{
-    right: 450px;
-    top: 200px;
-    height: 100px;
-}
 
-.project-picture{
-    right: 0px;
-    top: 100px;
-    height: 250px;
- margin-top: 80px;
-    width: 450px;
-} */
