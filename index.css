@@ -212,10 +212,13 @@ section{
         height: fit-content;
     }
 }
-@media only screen and (min-width: 900px)  {
+@media only screen and (min-width: 1000px)  {
     .project-title {left: 100px; }
+    .project-description { top: 40%; left: 140px; text-align: right;}
+}
+@media only screen and (min-width: 1200px)  {
+    .project-title {left: 150px; }
     .project-description { top: 40%; left: 200px; text-align: right;}
 }
-
 
 
