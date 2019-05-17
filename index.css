@@ -59,7 +59,7 @@ section{
 }
 @media only screen and (min-width: 800px) {
     .contact { width: 450px; height: 200px; position: relative;
-        margin-left: 50%; margin-top: 60px; }
+        margin-left: 45%; margin-top: 70px; }
     .name{ font-size: 25px; margin-top: 80px; }
     .occupation{ font-size: 23px; margin-left:250px; margin-top: 60px; }
     .phone, .email, .find-me, .location{ position: absolute; }
@@ -187,6 +187,34 @@ section{
     margin-top: 50px;
     flex: 1;
     font-size: 30px;
+}
+
+@media only screen and (min-width: 700px)  {
+    .project-main{
+        right: 40%;
+        font-size: 40px;
+    }
+    .project-picture{
+        top: 80px;
+        right: 0;
+        height: 200px;
+        width: 65%;
+        margin-top: 80px;
+    }
+    .project-title {
+        left: 50px;
+        top: 160px;
+        height: fit-content;
+    }
+    .project-description{
+        left: 50px;
+        top: 35%;
+        height: fit-content;
+    }
+}
+@media only screen and (min-width: 900px)  {
+    .project-title {left: 100px; }
+    .project-description { top: 40%; left: 200px; text-align: right;}
 }
 
 
