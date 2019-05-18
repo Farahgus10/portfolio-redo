@@ -34,6 +34,7 @@ section{
     margin-top: 50px;
     font-size: 15px;
     width: fit-content;
+    color: #484646;
 }
 
 .about-me{
@@ -66,7 +67,7 @@ section{
 @media only screen and (min-width: 800px) {
     .contact { width: 450px; height: 200px; position: relative;
         margin-left: 45%; margin-top: 70px; }
-    .name{ font-size: 25px; margin-top: 80px; }
+    .name{ font-size: 2.5vw; margin-top: 80px; }
     .occupation{ font-size: 23px; margin-left:250px; margin-top: 60px; }
     .phone, .email, .find-me, .location{ position: absolute; }
     .phone{ top: 0; left: 0; }
@@ -102,7 +103,6 @@ section{
 =====================*/
 .about-box{
     margin-left: 50px;
-    margin-top: 40px;
     font-size: 3vw;
     font-family: 'Roboto Mono', monospace;
 }
@@ -141,7 +141,6 @@ section{
 }
 @media only screen and (min-width: 1000px)  {
     .about { flex-direction: row; }
-    .about-box { margin-top: 20px}
     .bio-box{ margin-top: 180px; margin-left: -80px; width: 40%;}
     .skills-box{ margin-left: 130px; margin-top: 320px;}
     .bio-text, .skills-text{ font-size: 16px }
@@ -165,19 +164,21 @@ section{
 
 .project-main{
     text-align: right;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 50%;
     font-size: 30px;
     width: fit-content;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .project-picture{
-    top: 80px;
+    top: 60px;
     height: 200px;
     width: 100%;
     margin-top: 5%;
     background-image: url('./Images/NavbarHeader.png');
     background-size: cover;
+    background-position: center;
 }
 
 .project-title{
@@ -186,6 +187,7 @@ section{
     margin-right: auto;
     width: fit-content;
     font-size: 20px;
+    /* font-family: 'Chivo', sans-serif; */
 }
 
 .project-description{
@@ -225,31 +227,36 @@ section{
     }
     .project-picture{
         margin-left: auto;
-        margin-top: 80px;
+        margin-top: 60px;
         height: 325px;
         width: 60%;
     }
     .project-title {
         position: absolute;
         left: 3%;
-        top: 160px;
+        top: 130px;
         font-size: 30px;
     }
     .project-description{
         position: absolute;
         left: 3%;
-        top: 220px;
+        top: 180px;
         width: 30%;
         font-size: 15px;
         line-height: 22px;
     }
 }
 @media only screen and (min-width: 1000px)  {
+    .project-main { font-size: 3vw; }
     .project-title {
         left: 6%;
     }
     .project-description{
         left: 6%;
+        font-size: 17px;
+    }
+    .project-description p, .project-description a {
+        font-size: 15px;
     }
     .project-picture { height: 300px; }
 }

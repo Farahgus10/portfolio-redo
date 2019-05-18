@@ -62,7 +62,7 @@ function generateMainPageHTML(){
 
         <section class="projects-section">
             <div class="projects">
-                <div class="project-main">Projects</div>
+                <div class="project-main"><h1>Projects</h1></div>
                 
                 <a class="project-link" href="https://farah-sustainachoice-app.now.sh">
                   <div class="project-picture"></div>
