@@ -174,7 +174,9 @@ section{
     top: 80px;
     height: 200px;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 5%;
+    background-image: url('./Images/NavbarHeader.png');
+    background-size: cover;
 }
 
 .project-title{
@@ -182,12 +184,36 @@ section{
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
+    font-size: 20px;
 }
 
 .project-description{
     margin-top: 3%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    line-height: 20px;
+    font-size: 13px;
+}
+.tech-stack{
+    font-size: 13px;
+    color: grey;
+}
+.project-description a {
+    font-size: 13px;
+    text-decoration: none;
+    color: grey;
+}
+.project-description a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.project-link a:hover{
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 500px)  {
+    .project-description{ width: 350px}
 }
 
 @media only screen and (min-width: 700px)  {
@@ -198,7 +224,7 @@ section{
     .project-picture{
         margin-left: auto;
         margin-top: 80px;
-        height: 200px;
+        height: 325px;
         width: 60%;
     }
     .project-title {
@@ -209,26 +235,20 @@ section{
     .project-description{
         position: absolute;
         left: 3%;
-        top: 200px;
+        top: 220px;
+        width: 30%;
+        font-size: 15px;
+        line-height: 22px;
     }
 }
 @media only screen and (min-width: 1000px)  {
-    .project-main { font-size: 40px; }
+    .project-main { font-size: 50px; }
     .project-title {
-        left: 8%;
+        left: 6%;
+        font-size: 30px;
     }
     .project-description{
         left: 6%;
     }
     .project-picture { height: 300px; }
 }
-/* @media only screen and (min-width: 1000px)  {
-    .project-main { font-size: 50px; }
-    .project-title {left: 100px; }
-    .project-description { top: 40%; left: 140px; text-align: right;}
-}
-@media only screen and (min-width: 1200px)  {
-    .project-title {left: 150px; }
-    .project-description { top: 40%; left: 200px; text-align: right;}
-}  */
-

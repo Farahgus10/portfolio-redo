@@ -63,9 +63,18 @@ function generateMainPageHTML(){
         <section class="projects-section">
             <div class="projects">
                 <div class="project-main">Projects</div>
-                <div class="project-picture">project-picture</div>
-                <div class="project-title">project-title</div>
-                <div class="project-description">project-description</div>
+                
+                <a class="project-link" href="https://farah-sustainachoice-app.now.sh">
+                  <div class="project-picture"></div>
+                </a>
+                
+                <div class="project-title">SustainAChoice</div>
+                <div class="project-description">An app that allows users in the Washington, D.C. area to find sustainably-sourced food in their area.</br>
+                  <p class="tech-stack">Technical stack: React, Node, PostgreSQL, Express, CSS</p>
+
+                  <a href="">See client-side repo</a></br>
+                  <a href="">See server-side repo</a></br>
+                </div>
                 
             </div>
         </section>
