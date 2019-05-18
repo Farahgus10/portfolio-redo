@@ -18,7 +18,6 @@ section{
 }
 
 .header{
-    border: 1px solid red;
     height: 100vh;
     width: 100%;
     font-family: 'Roboto Mono', monospace;
@@ -38,7 +37,6 @@ section{
 }
 
 .about-me{
-    border: 1px solid orange;
     height: 100vh;
     width: 100%;
     font-family: 'Roboto Mono', monospace;
@@ -49,6 +47,14 @@ section{
     margin-top: 100px;
     margin-left: 5%;
     width: fit-content;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+.contact a:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 @media only screen and (min-width: 600px) {
     .contact { margin-top: 50px; }
@@ -151,20 +157,15 @@ section{
 .projects-section{
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
     position: relative;
     height: 100vh;
     width: 100%;
     font-family: 'Roboto Mono', monospace;
 }
 
-.project-description, .project-title, .project-picture, .project-main{
-    border: 1px solid black;
-}
-
 .project-main{
     text-align: right;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 50%;
     font-size: 30px;
     width: fit-content;
@@ -217,6 +218,7 @@ section{
 }
 
 @media only screen and (min-width: 700px)  {
+    .project-main { font-size: 50px; }
     .projects-section{
         display: inline-block;
         position: relative;
@@ -231,6 +233,7 @@ section{
         position: absolute;
         left: 3%;
         top: 160px;
+        font-size: 30px;
     }
     .project-description{
         position: absolute;
@@ -242,10 +245,8 @@ section{
     }
 }
 @media only screen and (min-width: 1000px)  {
-    .project-main { font-size: 50px; }
     .project-title {
         left: 6%;
-        font-size: 30px;
     }
     .project-description{
         left: 6%;
