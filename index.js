@@ -82,16 +82,6 @@ function generateMainPageHTML(){
     </div>`;
 }
 
-{/* <section class="block">
-              
-              
-              <p>Technical stack: React, Node, Express, PostgreSQL, CSS</p>
-              <div class="project-links">
-                <a href="https://farah-sustainachoice-app.now.sh/">See project</a>
-                <a href="https://farah-sustainachoice-app.now.sh/">See project2</a>
-              </div>
-        </section> */}
-
 function renderPortfolio(){
     // if startPage is true, then load main page html
     if (STORE.startPage){
