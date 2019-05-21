@@ -50,7 +50,7 @@ function generateMainPageHTML(){
                   <h3>Bio</h3>
                   <p class="bio-text">I'm a full-stack developer who values collaborative work, open minds, and a desire to keep learning above all else.</p>
                   <p class="bio-text">Besides coding, a typical week consists of exploring the great outdoors with my dog, learning new cooking skills, or curled up with a good book. </p>
-                  <p>If you're interested in working with me, or just want to say hello, feel free to contact me through phone, email, or Linkedin.</p>
+                  <p class="bio-text">If you're interested in working with me, or just want to say hello, feel free to contact me through phone, email, or Linkedin.</p>
                 </div>
                 <div class="skills-box">
                   <h3>Skills</h3>

@@ -123,12 +123,13 @@ section{
 }
 .bio-text, .skills-text{
     font-size: 12px;
+    line-height: 16px;
 }
 
 .skills-box{
     text-align: right;
     margin-right: 50px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 @media only screen and (min-width: 600px)  {
@@ -142,8 +143,8 @@ section{
 @media only screen and (min-width: 1000px)  {
     .about { flex-direction: row; }
     .bio-box{ margin-top: 180px; margin-left: -80px; width: 40%;}
-    .skills-box{ margin-left: 130px; margin-top: 320px;}
-    .bio-text, .skills-text{ font-size: 16px }
+    .skills-box{ margin-left: 130px; margin-top: 360px;}
+    .bio-text, .skills-text{ font-size: 16px; line-height: 22px; }
 }
 @media only screen and (min-width: 1200px)  {
     .skills-box { margin-left: 200px; }
