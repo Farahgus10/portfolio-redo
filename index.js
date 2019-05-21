@@ -48,8 +48,9 @@ function generateMainPageHTML(){
                 <div class="about-box"><h1>About</h1></div>
                 <div class="bio-box">
                   <h3>Bio</h3>
-                  <p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                  <p class="bio-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p class="bio-text">I'm a full-stack developer who values collaborative work, open minds, and a desire to keep learning above all else.</p>
+                  <p class="bio-text">Besides coding, a typical week consists of exploring the great outdoors with my dog, learning new cooking skills, or curled up with a good book. </p>
+                  <p>If you're interested in working with me, or just want to say hello, feel free to contact me through phone, email, or Linkedin.</p>
                 </div>
                 <div class="skills-box">
                   <h3>Skills</h3>
