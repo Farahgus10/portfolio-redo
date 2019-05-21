@@ -73,8 +73,8 @@ function generateMainPageHTML(){
                 <div class="project-description">An app that allows users in the Washington, D.C. area to find sustainably-sourced food in their area.</br>
                   <p class="tech-stack">Technical stack: React, Node, PostgreSQL, Express, CSS</p>
 
-                  <a href="">See client-side repo</a></br>
-                  <a href="">See server-side repo</a></br>
+                  <a href="">Client-side repo</a></br>
+                  <a href="">Server-side repo</a></br>
                 </div>
                 
             </div>
