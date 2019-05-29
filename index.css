@@ -28,10 +28,14 @@ nav {
     font-family: 'Roboto Mono', monospace;
   }
   
-  nav>div {
+nav>div {
     margin: 5px;
     padding: 5px;
-  }
+}
+nav div:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
   
 
 .header{
