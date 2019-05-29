@@ -9,8 +9,13 @@ const STORE = {
 function generateMainPageHTML(){
   return ` 
     <div id="main-page">
+      <nav>
+        <div id="about-button">About</div>
+        <div id="projects-button">Projects</div>
+        <div id="contact-button">Contact</div>
+      </nav>
         
-        <section class="header">
+        <section class="header" id="contact">
             <header role="banner">
 
               <div class="name">
@@ -44,8 +49,10 @@ function generateMainPageHTML(){
         </section>
 
         <section class="about-me">
-          <div class="about">
-            <div class="about-box"><h1>About</h1></div>
+          <div class="about" id="about">
+            <div class="about-box">
+              <h1>About</h1>
+            </div>
             <div class="bio-box">
               <h3>Bio</h3>
               <p class="bio-text">I'm a full-stack developer who values collaborative work, open minds, and a desire to keep learning above all else.</p>
@@ -62,7 +69,7 @@ function generateMainPageHTML(){
         </section>
 
         <section class="projects-section">
-          <div class="projects">
+          <div class="projects" id="projects">
             <div class="project-main"><h1>Projects</h1></div>
             
             <a class="project-link" href="https://farah-sustainachoice-app.now.sh">
@@ -97,10 +104,20 @@ function renderPortfolio(){
       $('.container').html(generateProjectsHTML());
     }
   }
-  
+
+  function scrollToSection(section) {
+    $("#" + section + "-button").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#" + section).offset().top
+      }, 800);
+    });
+  }
 
   function main(){
     renderPortfolio();
+    scrollToSection("about");
+    scrollToSection("projects");
+    scrollToSection("contact");
   }
   
   $(main);
