@@ -40,8 +40,8 @@ function generateMainPageHTML(){
                 </div>
                 <div class="find-me">
                   <p class="contact-title">find me</p>
-                  <a class="contact-info" href="https://github.com/Farahgus10">Git</a>
-                  <a class="contact-info" href="https://www.linkedin.com/in/farah-gustafson/">li</a>
+                  <a class="contact-info" href="https://github.com/Farahgus10">GitHub</a>
+                  <a class="contact-info" href="https://www.linkedin.com/in/farah-gustafson/">Linkedin</a>
                 </div>
               </div>
 

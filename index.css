@@ -108,9 +108,9 @@ nav div:hover {
     .name{ font-size: 2.5vw; margin-top: 80px; }
     .occupation{ font-size: 23px; margin-left:250px; margin-top: 60px; }
     .phone, .email, .find-me, .location{ position: absolute; }
-    .phone{ top: 0; left: 0; }
+    .phone{ top: 2px; left: 0; }
     .email{ top: 0; right: 0; }
-    .find-me{ bottom: 22px; left: 0; }
+    .find-me{ bottom: 18px; left: 0; }
     .location{ bottom: 0; right: 85px; }
     .contact-title{ font-size: 14px; }
     .contact-info {font-size: 18px; }
