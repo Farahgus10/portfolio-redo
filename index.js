@@ -10,9 +10,9 @@ function generateMainPageHTML(){
   return ` 
     <div id="main-page">
       <nav>
-        <div id="about-button">About</div>
-        <div id="projects-button">Projects</div>
-        <div id="contact-button">Contact</div>
+        <div id="about-top">About</div>
+        <div id="projects-top">Projects</div>
+        <div id="contact-top">Contact</div>
       </nav>
         
         <section class="header" id="contact">
@@ -72,16 +72,17 @@ function generateMainPageHTML(){
           <div class="projects" id="projects">
             <div class="project-main"><h1>Projects</h1></div>
             
-            <a class="project-link" href="https://farah-sustainachoice-app.now.sh">
-              <div class="project-picture"></div>
-            </a>
+            <div class="project-picture">
+            <a class="project-link" href="https://farah-sustainachoice-app.now.sh"></a>
+              </div>
             
-            <div class="project-title">SustainAChoice</div>
-            <div class="project-description">An app that allows users in the Washington, D.C. area to find sustainably-sourced food in their area.</br>
-              <p class="tech-stack">Technical stack: React, Node, PostgreSQL, Express, CSS</p>
+            
+            <div class="project-title"> SustainAChoice </div>
+            <div class="project-description"> An app that allows users in the Washington, D.C. area to find sustainably-sourced food in their area. </br>
+              <p class="tech-stack"> Technical stack: React, Node, PostgreSQL, Express, CSS </p>
 
-              <a href="">Client-side repo</a></br>
-              <a href="">Server-side repo</a></br>
+              <a href=""> Client-side repo </a></br>
+              <a href=""> Server-side repo </a></br>
             </div>
               
           </div>
@@ -106,10 +107,14 @@ function renderPortfolio(){
   }
 
   function scrollToSection(section) {
-    $("#" + section + "-button").click(function() {
+    var x = $('#' + section + "-top")
+    
+
+    $("#" + section + "-top").click(function() {
+      console.log(x);
       $('html, body').animate({
         scrollTop: $("#" + section).offset().top
-      }, 800);
+      }, 200);
     });
   }
 
