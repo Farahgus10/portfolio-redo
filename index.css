@@ -311,7 +311,7 @@ nav div:hover {
     /* left side project */
     .project-left {
         display: flex;
-        padding-top: 20%;
+        padding-top: 18%;
     }
 }
 @media(min-width: 1000px) {
@@ -319,6 +319,8 @@ nav div:hover {
     .name { font-size: 30px; }
     .occupation { font-size: 25px; padding-right: 8%;}
     .contact { padding-top: 0;}
+    .about { padding-bottom: 10%;}
+    .project-left { padding-top: 10%; } 
     .project-picture, .project2-picture {
         height: 400px;
     }
@@ -333,7 +335,7 @@ nav div:hover {
         flex-direction: column;
         padding-left: 8%;
         padding-right: 3%;
-        /* margin-top: 5%; */
+        padding-top: 3%;
     }
 }
 
