@@ -24,7 +24,7 @@ nav {
     padding-right: 15px;
     width: 100%;
     top: 0;
-    background-color: pink;
+    background-color: white;
     font-family: 'Roboto Mono', monospace;
     z-index: 999
   }
@@ -37,27 +37,48 @@ nav div:hover {
     cursor: pointer;
     text-decoration: underline;
 }
-  
 
-.header{
+ .header {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     width: 100%;
+    padding: 8%;
     font-family: 'Roboto Mono', monospace;
 }
 
-.name{
+.name {
+    padding-right: 5%;
+    padding-top: 10%;
     font-size: 15px;
-    margin-top: 10%;
-    margin-left: 5%;
     width: fit-content;
+}
+.occupation {
+    text-align: right;
+}
+.contact {
+    padding-top: 10%;
+}
+.title {
+    font-size: 14px;
+}
+.contact-title{
+    color: grey;
+} 
+.contact a{
+    color: black;
+}
+.contact a:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .name h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    /* border-right: .15em solid black; The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    /* margin: 0 auto; Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    border-right: .15em solid black; /* The typwriter cursor */
+     white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto;  /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /*Adjust as needed */
     animation: 
       typing 2.5s steps(30, end),
       blink-caret .5s step-end infinite;
@@ -68,75 +89,6 @@ nav div:hover {
     to { width: 100% }
   }
 
-.occupation{
-    margin-left: 11%;
-    margin-top: 50px;
-    font-size: 15px;
-    width: fit-content;
-    color: #484646;
-}
-
-.about-me{
-    height: 100vh;
-    width: 100%;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.contact{
-    font-family: 'Roboto Mono', monospace;
-    margin-top: 100px;
-    margin-left: 5%;
-    width: fit-content;
-}
-.contact a{
-    text-decoration: none;
-    color: black;
-}
-.contact a:hover{
-    cursor: pointer;
-    text-decoration: underline;
-}
-@media only screen and (min-width: 600px) {
-    .contact { margin-top: 50px; }
-    .name{ margin-top: 8%; font-size: 18px; }
-}
-@media only screen and (min-width: 700px) {
-    .contact { margin-left: 60%; }
-}
-@media only screen and (min-width: 800px) {
-    .contact { width: 450px; height: 200px; position: relative;
-        margin-left: 45%; margin-top: 70px; }
-    .name{ font-size: 2.5vw; margin-top: 80px; }
-    .occupation{ font-size: 23px; margin-left:250px; margin-top: 60px; }
-    .phone, .email, .find-me, .location{ position: absolute; }
-    .phone{ top: 2px; left: 0; }
-    .email{ top: 0; right: 0; }
-    .find-me{ bottom: 18px; left: 0; }
-    .location{ bottom: 0; right: 85px; }
-    .contact-title{ font-size: 14px; }
-    .contact-info {font-size: 18px; }
-}
-
-@media only screen and (min-width: 1200px) {
-.contact {
-    width: 480px;
-    height: 230px;
-    position: relative;
-    margin-left: 55%;
-    margin-top: 120px;
-}
-.name{ margin-top: 80px; }
-.occupation{ font-size: 25px; margin-left:400px; margin-top: 50px; }
-}
-
-@media only screen and (min-width: 1600px) {
-    .contact{ margin-top: 2%; margin-left: 60%; }
-}
-
-.contact-title{
-    color: grey;
-}
-
 /*====================
     ABOUT SECTION
 =====================*/
@@ -145,10 +97,11 @@ nav div:hover {
     font-size: 3vw;
     font-family: 'Roboto Mono', monospace;
 }
-
 .about{ 
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 2%;
 }
 
 .about h3{
@@ -193,43 +146,39 @@ nav div:hover {
 /*======================
     PROJECTS SECTION
 ========================*/
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+.project-main{
+    text-align: right;
+    margin-top: 20px;
+    padding-right: 10%;
+    font-size: 20px;
+    /* width: fit-content; */
+    font-family: 'Roboto Mono', monospace;
+}
 .projects-section{
     display: flex;
     flex-direction: column;
-    position: relative;
     height: 100vh;
     width: 100%;
     font-family: 'Roboto Mono', monospace;
 }
-
-.project-main{
-    text-align: right;
-    margin-top: 20px;
-    margin-left: 35%;
-    font-size: 20px;
-    width: fit-content;
-    font-family: 'Roboto Mono', monospace;
-}
-
 .project-picture{
-    top: 60px;
     height: 200px;
     width: 100%;
-    margin-top: 5%;
     background-image: url('./Images/NavbarHeader.png');
     background-size: cover;
     background-position: center;
 }
-
 .project-title{
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
     font-size: 20px;
-    /* font-family: 'Chivo', sans-serif; */
 }
-
 .project-description{
     margin-top: 3%;
     margin-left: auto;
@@ -255,67 +204,136 @@ nav div:hover {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 500px)  {
-    .project-main{ margin-left: 50%; }
-    .project-description{ width: 350px}
+.project-left {
+    padding-top: 10%;
+}
+.project2-picture {
+    height: 200px;
+    width: 100%;
+    background-image: url('./Images/Spaced-rep.png');
+    background-size: cover;
+    background-position: center;
+}
+.project-left-title {
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    font-size: 20px;
+}
+.project-left-description {
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    line-height: 20px;
+    font-size: 13px;
+}
+.project-left-description a {
+    font-size: 13px;
+    text-decoration: none;
+    color: grey;
+}
+.project-left-description a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.project-left-link a:hover{
+    cursor: pointer;
 }
 
-@media only screen and (min-width: 700px)  {
-    .project-main { font-size: 30px; }
-    .projects-section{
-        display: inline-block;
-        position: relative;
+/*======================
+   END PROJECTS SECTION
+========================*/
+@media(min-width: 600px) {
+    .name { padding-top: 5%; font-size: 22px;}
+    .occupation { text-align: center;}
+}
+@media (min-width: 720px) {
+    .header {
+        padding-top: 4%;
+        padding-bottom: 4%;
     }
-    .project-picture{
-        margin-left: auto;
-        margin-top: 60px;
-        height: 370px;
-        width: 60%;
+    .contact-wrapper { 
+        margin-top: 8%;
     }
-    .project-title {
-        position: absolute;
-        left: 3%;
-        top: 160px;
-        font-size: 30px;
+   .contact {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 13px;
+        flex: 50%;
+        text-align: right;
+   }
+   .phone {
+       flex: 50%;
+       width: fit-content
+   }
+   .email {
+        flex: 50%;
+        text-align: right;
+        width: fit-content
+   }
+   .location {
+       flex: 50%;
+       width: fit-content
+   }
+   .find-me {
+        flex: 50%;
+        text-align: right;
+        width: fit-content
+   }
+   .info, .find-me a { font-size: 18px; }
+}
+
+
+@media(min-width: 700px) {
+    .project1{
+        display: flex;
+        flex-direction: row-reverse;
     }
-    .project-description{
-        position: absolute;
-        left: 3%;
-        top: 200px;
-        width: 30%;
+    .project-main {
+        font-size: 24px;
+        padding-right: 25%;
+    }
+    .project-info {
+        flex-direction: column;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: 5%;
+    }
+    .project-description, .project-left-description {
         font-size: 15px;
-        line-height: 22px;
+    }
+    .project-picture, .project2-picture {
+        height: 300px;
+    }
+
+    /* left side project */
+    .project-left {
+        display: flex;
+        padding-top: 20%;
     }
 }
-@media only screen and (min-width: 1000px)  {
-    .project-main { font-size: 3vw; }
-    .project-title {
-        margin-top: 50px;
-        left: 6%;
+@media(min-width: 1000px) {
+    .name-occupation { width: 60%;}
+    .name { font-size: 30px; }
+    .occupation { font-size: 25px; padding-right: 8%;}
+    .contact { padding-top: 0;}
+    .project-picture, .project2-picture {
+        height: 400px;
     }
-    .project-description{
-        margin-top: 80px;
-        left: 6%;
-        font-size: 17px;
+    .project2-picture {
+        width: 50%;
     }
-    .project-description p, .project-description a {
-        font-size: 15px;
+    .project-description, .project-left-description {
+        font-size: 18px;
+        line-height: 25px;
     }
-    .project-picture { height: 380px; }
+    .project-left-info {
+        flex-direction: column;
+        padding-left: 8%;
+        padding-right: 3%;
+        /* margin-top: 5%; */
+    }
 }
-@media only screen and (min-width: 1200px)  {
-    .project-main { font-size: 3vw; }
-    .project-title {
-        margin-top: 80px;
-        left: 6%;
-    }
-    .project-description{
-        margin-top: 100px;
-        left: 6%;
-        font-size: 17px;
-    }
-    .project-description p, .project-description a {
-        font-size: 15px;
-    }
-    .project-picture { height: 400px; }
-}
+
