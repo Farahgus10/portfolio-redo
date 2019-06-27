@@ -48,13 +48,14 @@ nav div:hover {
 }
 
 .name {
-    padding-right: 5%;
+    padding-right: 8%;
     padding-top: 10%;
-    font-size: 15px;
+    font-size: 11px;
     width: fit-content;
 }
 .occupation {
     text-align: right;
+    font-size: 10px;
 }
 .contact {
     padding-top: 10%;
@@ -338,4 +339,8 @@ nav div:hover {
         padding-top: 3%;
     }
 }
+
+
+
+
 
