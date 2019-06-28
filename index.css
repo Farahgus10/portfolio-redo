@@ -176,12 +176,9 @@ nav div:hover {
     width: 100%;
     font-family: 'Roboto Mono', monospace;
 }
-.project1-picture{
-    height: 200px;
+.project1-picture, .project2-picture, .project3-picture{
     width: 100%;
-    background-image: url('./Images/NavbarHeader.png');
-    background-size: cover;
-    background-position: center;
+    height: auto;
 }
 .project-right-title{
     margin-top: 3%;
@@ -194,7 +191,7 @@ nav div:hover {
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 85%;
     line-height: 20px;
     font-size: 13px;
 }
@@ -218,13 +215,6 @@ nav div:hover {
 .project-left {
     padding-top: 10%;
 }
-.project2-picture {
-    height: 200px;
-    width: 100%;
-    background-image: url('./Images/Spaced-rep.png');
-    background-size: cover;
-    background-position: center;
-}
 .project-left-title {
     margin-top: 3%;
     margin-left: auto;
@@ -236,7 +226,7 @@ nav div:hover {
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 85%;
     line-height: 20px;
     font-size: 13px;
 }
@@ -253,13 +243,6 @@ nav div:hover {
     cursor: pointer;
 }
 
-.project3-picture{
-    height: 200px;
-    width: 100%;
-    background-image: url('./Images/Rendezvous.png');
-    background-size: cover;
-    background-position: center;
-}
 /*======================
    END PROJECTS SECTION
 ========================*/
@@ -271,6 +254,33 @@ nav div:hover {
     .name { padding-top: 5%; font-size: 22px;}
     .occupation { text-align: center;}
 }
+
+@media(min-width: 700px) {
+    .project-right{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .project-main {
+        font-size: 30px;
+        padding-right: 25%;
+    }
+    .project-right-info {
+        flex-direction: column;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: 5%;
+    }
+    .project-right-description, .project-left-description {
+        font-size: 15px;
+    }
+
+    /* left side project */
+    .project-left {
+        display: flex;
+        padding-top: 18%;
+    }
+}
+
 @media (min-width: 720px) {
     .header {
         padding-top: 4%;
@@ -304,54 +314,35 @@ nav div:hover {
         text-align: right;
         width: fit-content
    }
-   .info, .find-me a { font-size: 18px; }
-}
-
-
-@media(min-width: 700px) {
-    .project-right{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    .project-main {
-        font-size: 30px;
-        padding-right: 25%;
-    }
-    .project-right-info {
-        flex-direction: column;
-        padding-left: 3%;
-        padding-right: 3%;
-        margin-top: 5%;
-    }
-    .project-right-description, .project-left-description {
-        font-size: 15px;
-    }
-    .project1-picture, .project2-picture, .project3-picture {
-        height: 300px;
-    }
-
-    /* left side project */
-    .project-left {
-        display: flex;
-        padding-top: 18%;
+   .info, .find-me a { 
+       font-size: 18px; 
     }
 }
+
 @media(min-width: 1000px) {
-    .name-occupation { width: 60%;}
-    .name { font-size: 30px; }
-    .occupation { font-size: 25px; padding-right: 8%;}
-    .contact { padding-top: 0;}
-    .about { padding-bottom: 10%;}
+    .name-occupation { 
+        width: 60%;
+    }
+    .name { 
+        font-size: 30px; 
+    }
+    .occupation { 
+        font-size: 25px; 
+        padding-right: 8%;
+    }
+    .contact { 
+        padding-top: 0;
+    }
+    .about { 
+        padding-bottom: 10%;
+    }
     .project-right-title, .project-left-title {
         font-size: 25px;
     }
-    .project-left { padding-top: 10%; } 
-    .project1-picture, .project2-picture, .project3-picture{
-        height: 400px;
-    }
-    .project2-picture {
-        width: 50%;
-    }
+    .project-left { 
+        padding-top: 10%; 
+    } 
+   
     .project-right-description, .project-left-description {
         font-size: 18px;
         line-height: 25px;

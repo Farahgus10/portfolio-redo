@@ -80,10 +80,9 @@ function generateMainPageHTML(){
 
             <section>
             <div class="project-right">
-                <div class="project1-picture">
-                  <a class="project-right-link" href="https://farah-sustainachoice-app.now.sh"></a>
-                </div>
-                
+
+               <a href="https://farah-sustainachoice-app.now.sh"><img src="./Images/NavbarHeader.png" class="project1-picture" alt="foo alt" /></a>
+            
                 <div class="project-right-info">
                   <div class="project-right-title"> SustainAChoice </div>
                   <div class="project-right-description"> An app for eco-minded individuals in the Washington, D.C. area to find sustainably-sourced food in their area. </br>
@@ -98,9 +97,8 @@ function generateMainPageHTML(){
 
             <section>
               <div class="project-left">
-                <div class="project2-picture"> 
-                  <a class="project-left-link" href="https://farah-quonn-spaced-repetition-app.now.sh/register"></a>
-                </div>
+
+              <a href="https://farah-sustainachoice-app.now.sh"><img src="./Images/Spaced-rep.png" class="project2-picture" alt="foo alt" /></a>
 
                 <div class="project2-info">
                   <div class="project-left-title"> Spaced Repetition </div>
@@ -116,9 +114,8 @@ function generateMainPageHTML(){
 
             <section>
               <div class="project-right">
-                <div class="project3-picture"> 
-                  <a class="project-right-link" href="https://rendezvous-app.now.sh/landingPage"></a>
-                </div>
+
+              <a href="https://farah-sustainachoice-app.now.sh"><img src="./Images/Rendezvous.png" class="project3-picture" alt="foo alt" /></a>
 
                 <div class="project-right-info">
                   <div class="project-right-title"> Rendezvous </div>
