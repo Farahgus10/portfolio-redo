@@ -35,9 +35,12 @@ nav>div {
 }
 nav div:hover {
     cursor: pointer;
-    text-decoration: underline;
+    color: green;
 }
 
+/*======================
+      CONTACT SECTION
+========================*/
  .header {
     display: flex;
     flex-direction: column;
@@ -64,7 +67,7 @@ nav div:hover {
     font-size: 14px;
 }
 .contact-title{
-    color: grey;
+    color: green;
 } 
 .contact a{
     color: black;
@@ -89,6 +92,11 @@ nav div:hover {
     from { width: 0 }
     to { width: 100% }
   }
+/*======================
+   END CONTACT SECTION
+========================*/
+
+
 
 /*====================
     ABOUT SECTION
@@ -107,7 +115,7 @@ nav div:hover {
 
 .about h3{
     font-size: 17px;
-    color: grey;
+    color: green;
 }
 
 .bio-box{
@@ -142,6 +150,9 @@ nav div:hover {
 @media only screen and (min-width: 1200px)  {
     .skills-box { margin-left: 200px; }
 }
+/*====================
+   END ABOUT SECTION
+=====================*/
 
 
 /*======================
@@ -156,7 +167,6 @@ nav div:hover {
     margin-top: 20px;
     padding-right: 10%;
     font-size: 20px;
-    /* width: fit-content; */
     font-family: 'Roboto Mono', monospace;
 }
 .projects-section{
@@ -166,21 +176,21 @@ nav div:hover {
     width: 100%;
     font-family: 'Roboto Mono', monospace;
 }
-.project-picture{
+.project1-picture{
     height: 200px;
     width: 100%;
     background-image: url('./Images/NavbarHeader.png');
     background-size: cover;
     background-position: center;
 }
-.project-title{
+.project-right-title{
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
     font-size: 20px;
 }
-.project-description{
+.project-right-description{
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
@@ -192,16 +202,16 @@ nav div:hover {
     font-size: 13px;
     color: grey;
 }
-.project-description a {
+.project-right-description a {
     font-size: 13px;
     text-decoration: none;
     color: grey;
 }
-.project-description a:hover {
+.project-right-description a:hover {
     cursor: pointer;
-    text-decoration: underline;
+    color: green;
 }
-.project-link a:hover{
+.project-right-link a:hover{
     cursor: pointer;
 }
 
@@ -237,14 +247,25 @@ nav div:hover {
 }
 .project-left-description a:hover {
     cursor: pointer;
-    text-decoration: underline;
+    color: green;
 }
 .project-left-link a:hover{
     cursor: pointer;
 }
 
+.project3-picture{
+    height: 200px;
+    width: 100%;
+    background-image: url('./Images/Rendezvous.png');
+    background-size: cover;
+    background-position: center;
+}
 /*======================
    END PROJECTS SECTION
+========================*/
+
+/*======================
+      MEDIA QUERIES
 ========================*/
 @media(min-width: 600px) {
     .name { padding-top: 5%; font-size: 22px;}
@@ -288,24 +309,24 @@ nav div:hover {
 
 
 @media(min-width: 700px) {
-    .project1{
+    .project-right{
         display: flex;
         flex-direction: row-reverse;
     }
     .project-main {
-        font-size: 24px;
+        font-size: 30px;
         padding-right: 25%;
     }
-    .project-info {
+    .project-right-info {
         flex-direction: column;
         padding-left: 3%;
         padding-right: 3%;
         margin-top: 5%;
     }
-    .project-description, .project-left-description {
+    .project-right-description, .project-left-description {
         font-size: 15px;
     }
-    .project-picture, .project2-picture {
+    .project1-picture, .project2-picture, .project3-picture {
         height: 300px;
     }
 
@@ -321,14 +342,17 @@ nav div:hover {
     .occupation { font-size: 25px; padding-right: 8%;}
     .contact { padding-top: 0;}
     .about { padding-bottom: 10%;}
+    .project-right-title, .project-left-title {
+        font-size: 25px;
+    }
     .project-left { padding-top: 10%; } 
-    .project-picture, .project2-picture {
+    .project1-picture, .project2-picture, .project3-picture{
         height: 400px;
     }
     .project2-picture {
         width: 50%;
     }
-    .project-description, .project-left-description {
+    .project-right-description, .project-left-description {
         font-size: 18px;
         line-height: 25px;
     }
@@ -339,6 +363,9 @@ nav div:hover {
         padding-top: 3%;
     }
 }
+/*======================
+    END MEDIA QUERIES
+========================*/
 
 
 

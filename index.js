@@ -79,14 +79,14 @@ function generateMainPageHTML(){
             <div class="project-main"><h1>Projects</h1></div>
 
             <section>
-            <div class="project1">
-                <div class="project-picture">
-                  <a class="project-link" href="https://farah-sustainachoice-app.now.sh"></a>
+            <div class="project-right">
+                <div class="project1-picture">
+                  <a class="project-right-link" href="https://farah-sustainachoice-app.now.sh"></a>
                 </div>
                 
-                <div class="project-info">
-                  <div class="project-title"> SustainAChoice </div>
-                  <div class="project-description"> An app that allows users in the Washington, D.C. area to find sustainably-sourced food in their area. </br>
+                <div class="project-right-info">
+                  <div class="project-right-title"> SustainAChoice </div>
+                  <div class="project-right-description"> An app for eco-minded individuals in the Washington, D.C. area to find sustainably-sourced food in their area. </br>
                     <p class="tech-stack"> Technical stack: React, Node, PostgreSQL, Express, HTML, CSS </p>
                     <a href="https://github.com/Farahgus10/SustainaChoice-client"> Client-side repo </a></br>
                     <a href="https://github.com/Farahgus10/SustainaChoice-server"> Server-side repo </a></br>
@@ -94,6 +94,7 @@ function generateMainPageHTML(){
                 </div>
               </div>
             <section>
+
 
             <section>
               <div class="project-left">
@@ -110,7 +111,24 @@ function generateMainPageHTML(){
                   </div>
                 </div>
               </div>
+            </section>
 
+
+            <section>
+              <div class="project-right">
+                <div class="project3-picture"> 
+                  <a class="project-right-link" href="https://rendezvous-app.now.sh/landingPage"></a>
+                </div>
+
+                <div class="project-right-info">
+                  <div class="project-right-title"> Rendezvous </div>
+                  <div class="project-right-description"> A dating app that connects people through mutual interests and events in their area. </br>
+                    <p class="tech-stack"> Technical stack: React, Node, PostgreSQL, Express, HTML, CSS </p>
+                    <a href="https://github.com/thinkful-ei-bee/EastCoast-Team-Project-Client"> Client-side repo </a></br>
+                    <a href="https://github.com/thinkful-ei-bee/EastCoast-Team-Project-Capstone3-Server"> Server-side repo </a></br>
+                  </div>
+                </div>
+              </div>
             </section>
 
           </div>
