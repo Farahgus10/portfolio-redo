@@ -93,8 +93,7 @@ function generateMainPageHTML(){
                 </div>
               </div>
             <section>
-
-
+            
             <section>
               <div class="project-left">
 
