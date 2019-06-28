@@ -98,7 +98,7 @@ function generateMainPageHTML(){
             <section>
               <div class="project-left">
 
-              <a href="https://farah-sustainachoice-app.now.sh"><img src="./Images/Spaced-rep.png" class="project2-picture" alt="foo alt" /></a>
+              <a href="https://farah-quonn-spaced-repetition-app.now.sh/register"><img src="./Images/Spaced-rep.png" class="project2-picture" alt="foo alt" /></a>
 
                 <div class="project2-info">
                   <div class="project-left-title"> Spaced Repetition </div>
@@ -115,7 +115,7 @@ function generateMainPageHTML(){
             <section>
               <div class="project-right">
 
-              <a href="https://farah-sustainachoice-app.now.sh"><img src="./Images/Rendezvous.png" class="project3-picture" alt="foo alt" /></a>
+              <a href="https://rendezvous-app.now.sh/landingPage"><img src="./Images/Rendezvous.png" class="project3-picture" alt="foo alt" /></a>
 
                 <div class="project-right-info">
                   <div class="project-right-title"> Rendezvous </div>
